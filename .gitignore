@@ -1,5 +1,5 @@
-./cv.aux
-./cv.log
-./cv.out
-./cv.pdf
-./cv.synctex.gz
+*.aux
+*.log
+*.out
+*.pdf
+*.synctex.gz
