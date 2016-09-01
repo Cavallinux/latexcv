@@ -1,0 +1,79 @@
+%% start of file `template_en.tex'.
+%% Copyright 2007 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+\documentclass[10pt,letter,sans]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Paolo Giovanni}
+\familyname{Mezzano Barahona}
+%\title{CV Paolo Mezzano}               % optional, remove the line if not wanted
+\address{Universidad de Santiago 1887}{Maip\'{u}, Santiago, RM}    % optional, remove the line if not wanted
+\mobile{+56997875968}                    % optional, remove the line if not wanted
+\phone{+56227652271}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{pmezzano@gmail.com}                      % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\quote{La mente construye realidades}                 % optional, remove the line if not wanted
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Formaci\'{o}n acad\'{e}mica}
+\cventry{2003 - 2007}{Ingenier\'{i}a de ejecuci\'{o}n en computaci\'{o}n e inform\'{a}tica}{Universidad de Santiago de Chile}{}{\textit{Santiago, RM}}{} %arguments 3 to 6 are optional
+
+\section{Experiencia laboral}
+\cventry{agosto 2016 - actualidad}{KDU}{Santiago}{Regi\'{o}n metropolitana}{Chile}{Actualmente, se trabaja en el desarrollo y mantenimiento de aplicaciones web para la plataforma comercial del Banco de Chile} 
+\cventry{septiembre 2012 - agosto 2016}{Experti}{Santiago}{Regi\'{o}n metropolitana}{Chile}{Se trabaj\'{o} en el desarrollo y mantenimiento de aplicaciones web para comercio electr\'{o}nico, usando JEE}
+\cventry{agosto 2011 - agosto 2012}{Wiprojects Chile}{Santiago}{Regi\'{o}n metropolitana}{Chile}{Se trabaj\'{o} en el desarrollo de juegos multijugador, utilizando el framework de juegos Smartfox y utilizando los lenguajes ActionScript y Java para la generaci\'{o}n de las extensiones necesarias para cada juego.} % arguments 3 to 6 are optional
+\cventry{septiembre 2010 - julio 2011}{Indra Sistemas Chile}{Santiago}{Regi\'{o}n metropolitana}{Chile}{Se trabaj\'{o} en el desarrollo de aplicaciones para telecomunicaciones, utilizando tanto Java, como C/C++ y Python}                % arguments 3 to 6 are optional
+\cventry{diciembre 2009 - marzo 2010}{Imagemaker IT}{Santiago}{Regi\'{o}n metropolitana}{Chile}{Se trabaj\'{o} en el desarrollo de nuevas funcionalidades sobre la plataforma Weblogic 8.1, para el banco BCI, utilizando patrones de diseño JEE.}                % arguments 3 to 6 are optional
+\cventry{agosto 2009 - noviembre 2009}{SIIGSA}{Santiago}{Regi\'{o}n metropolitana}{Chile}{Se trabaj\'{o} en el mantenimiento de un sitio web, hecho con JEE (framework Struts), encargado de llevar un cat\'{a}logo en línea de metadatos de la informaci\'{o}n territorial de las instituciones del Estado de Chile. Este cat\'{a}logo lo administra el Ministerio de Bienes Nacionales.}                % arguments 3 to 6 are optional
+\cventry{junio 2009 - julio 2009}{IBM Chile}{Santiago}{Regi\'{o}n metropolitana}{Chile}{Se realiz\'{o} testing a aplicaci\'{o}n web, desarrollada con JEE, encargada del ciclo de vida de mantenimiento de la flota de aviones de LAN Chile.}                % arguments 3 to 6 are optional
+\cventry{julio 2007 - enero 2009}{Rhiscom}{Santiago}{Regi\'{o}n metropolitana}{Chile}{Se realiz\'{o} entre otras labores, testing de aplicaciones de punto de venta IBM, y levantamiemto de requerimientos para aplicaciones de punto de venta IBM, siguiendo la metodología del Proceso Unificado. Junto con ello, se implement\'{o} una plataforma de seguimiento de bugs para los proyectos de Rhiscom, llamada Mantis.}                % arguments 3 to 6 are optional
+
+\section{Idiomas}
+\cvlanguage{Español}{Idioma nativo}{}
+\cvlanguage{Ingl\'{e}s}{Nivel t\'{e}cnico}{}
+
+\newpage{}
+
+\section{Competencias t\'{e}cnicas}
+\cvcomputer{Sistemas operativos}{GNU/Linux, MS Windows}{Lenguajes de programaci\'{o}n}{ Java, C/C++, Python, ActionScript,Bash}
+\cvcomputer{Bases de datos}{MySQL, PostgreSQL, Oracle, SQLServer}{Diseño web}{ X/HTML, XML, XSLT, XPath, CSS, JavaScript}
+\cvcomputer{J2EE}{JSP/Servlets/JSTL, JSF, Struts, Spring, JMS, EJB 2.1/3.0, Hibernate}{Lenguajes de modelamiento}{UML}
+\cvcomputer{Herramientas CASE}{Enterprise Architect,Power Designer}{IDEs}{Eclipse, Flash Develop, Netbeans, Visual Studio}
+\cvcomputer{Construccion de software}{Maven, Ant}{Testing automatizado}{JUnit}
+
+\section{Otros intereses}
+\cvline{}{Gusto sobremanera del f\'{u}tbol, el rock en todas sus variantes, el software libre y los entornos de escritorio libres (KDE, GNOME, LXDE)}
+
+\closesection{}                   % needed to renewcommands
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+% Publications from a BibTeX file
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}
