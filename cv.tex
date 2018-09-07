@@ -1,42 +1,18 @@
-%% start of file `template_en.tex'.
-%% Copyright 2007 Xavier Danaux (xdanaux@gmail.com).
-%
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
 \documentclass[10pt,letter,sans]{moderncv}
-
-% moderncv themes
-\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-%\moderncvtheme[green]{classic}                % idem
-
-% character encoding
-\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
-
-% adjust the page margins
+\moderncvtheme[blue]{casual}
+\usepackage[utf8]{inputenc}
 \usepackage[scale=0.8]{geometry}
-\recomputelengths                             % required when changes are made to page layout lengths
+\recomputelengths
 
-% personal data
 \firstname{Paolo Giovanni}
 \familyname{Mezzano Barahona}
-%\title{CV Paolo Mezzano}               % optional, remove the line if not wanted
-\address{Universidad de Santiago 1887}{Maip\'{u}, Santiago, RM}    % optional, remove the line if not wanted
-\mobile{+56997875968}                    % optional, remove the line if not wanted
-\phone{+56232318152}                      % optional, remove the line if not wanted
-%\fax{fax (optional)}                          % optional, remove the line if not wanted
-\email{pmezzano@gmail.com}                      % optional, remove the line if not wanted
-\social[github]{Cavallinux} 
-%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
-%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
-%\quote{Juegue}                 % optional, remove the line if not wanted
+\address{Universidad de Santiago 1887}{Maip\'{u}, Santiago, RM}
+\mobile{+56997875968}
+\phone{+56232318152}
+\email{pmezzano@gmail.com}
+\social[github]{Cavallinux}
+\nopagenumbers{}
 
-\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
-
-
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
 \begin{document}
 \makecvtitle
 
@@ -68,7 +44,4 @@ atencion de clientes, cuyos usuarios será\'{a}n ejecutivos de cuenta en sucursa
 
 \section{Otros intereses}
 \cvline{}{Gusto sobremanera del f\'{u}tbol, el rock en todas sus variantes, el software libre y los entornos de escritorio libres (KDE, GNOME, LXDE)}
-
-%\closesection{}                   % needed to renewcommands
-%\renewcommand{\listitemsymbol}{-} % change the symbol for lists
 \end{document}
